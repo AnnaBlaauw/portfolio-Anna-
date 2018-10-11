@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Anna Blaauw</title>
+    <link rel="stylesheet" type="text/css" href="about.css">
+</head>
+<body>
+<!-- SIDEBAR MENU STARTS HERE the sidebar -->
+<div class="sidebar">
+        <a href="index2.html">Home</a>
+        <a href="work.html">Work</a>
+        <a class="active" href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <!-- Page content -->
+      <div class="content">
+        
+      </div> 
+      <div class="div1">
+            <h3><b>Over mijzelf.</b></h3>
+            <p>Hallo, ik ben Anna Blaauw.<br>
+               Ik ben een Groninger, een moeder, een grote zus en een dochter.<br>
+               Daarnaast ben ik een sociaal en creatief mens, die houdt van samenwerken en creeeren.<br>
+               Als beginnend web developer vind ik het enorm leuk en uitdagend om de enorm diverse mogelijkheden binnen dit vakgebied te verkennen.<br>
+               mijn achtergrond is in crossmedia film productie en mijn krachten liggen bij concepting en communicatie. </p>
+        </div>
+<!-- <div class="qualifications">
+    <h2>My Qualifications</h2>
+            <h3 class="text-uppercase">OBS de Beijumkorf</h3>
+                <p>January 2018 - july 2018</p>
+                <h4>IT assistant</h4>
+                <p>
+                At this elementary school I have been assisting teachers with implementing computer technologies in their educational program,<br>
+                and teaching children about the basics of programming with educational robots and tools such as Scratch.
+                </p>							
+            <h3 class="text-uppercase">UMCG TeeVee</h3>
+                <p>September 2017 - now</p>
+                <h4 class="pt-20 pb-20">Camerawoman</h4>
+                <p>
+                UMCG Teevee is an organization of volunteers who produce (live) tv-shows for children that stay at the UMCG childrens hospital. <br>
+                I work as a camerawoman during the live shows of the bingo night. 
+                </p>				                
+</div> -->
+
+
+<!-- CLICKABLE RESUME STARTS HERE -->    
+    <div class="resume">
+        <br>
+        <br>
+        <b><i>Mijn CV</i></b>
+<!-- Trigger the Modal -->
+    <img id="myImg" src="img/canvaresume.jpg"  style="width:100%;max-width:150px">
+
+<!-- The Modal -->
+    <div id="myModal" class="modal">
+
+<!-- The Close Button -->
+    <!-- <span class="close">&times;</span> -->
+
+<!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+<!-- Modal Caption (Image Text) -->
+    <div id="caption">Resume Anna Blaauw</div>
+   </div> 
+   </div>
+<!-- JS STARTS HERE -->
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// closes by clicking anywhere hopefully
+var modal = document.getElementById('myModal');
+modal.addEventListener('click',function(){
+this.style.display="none";
+})
+</script>
+</body>
+</html>
